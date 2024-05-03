@@ -19,13 +19,13 @@
     <input type="text" id="apellido" name="apellido" autocomplete="on" required>
    
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required value="email@gmail.com">
     
     <label for="fechaNac">Fecha de nacimiento:</label>
     <input type="date" id="fechaNac" name="fechaNac" autocomplete="on" required>
    
-    <label for="phone">Ingrese su numero:</label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{9}">
+    <label for="numero">Ingrese su numero:</label>
+    <input type="tel" id="numero" name="numero" pattern="[0-9]{9}" value="123456789">
    
     <label for="genero"></label>
     <input type="radio" id="genero" name="genero" value="M" autocomplete="on" required> Masculino
@@ -36,7 +36,11 @@
     <label for="genero"></label>
     <input type="radio" id="genero" name="genero" value="O" autocomplete="on" required> Otro
    
-    <select name ="pais" id="pais">
+
+
+    <input list="pais" name="pais">
+
+    <datalist id="pais">
         <option value="Argentina">Argentina</option>
         <option value="Bolivia">Bolivia</option>
         <option value="Brasil">Brasil</option>
@@ -47,11 +51,10 @@
         <option value="Perú">Perú</option>
         <option value="Uruguay">Uruguay</option>
         <option value="Venezuela">Venezuela</option>
-    </select>
-
+    </datalist>
 
     <input type="submit" value="Iniciar sesión">
-
+    
 </form>
 
 </html>
