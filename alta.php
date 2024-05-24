@@ -8,8 +8,10 @@ $numero = $_POST['numero'] ?? "defecto";
 $genero = $_POST['genero'] ?? "defecto";
 $pais = $_POST['pais'] ?? "defecto";
 $persona = new Persona($nombre, $apellido, $email, $fechaNac, $numero, $genero, $pais);
-?>
+$persona->crear();
+; ?>
 <pre>
 <?php
+
 var_dump($persona); ?>
 </pre>
